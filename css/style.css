@@ -1,0 +1,147 @@
+
+
+.container{
+ position: relative;
+ width: 100%;
+ height: 100vh ;
+ background: linear-gradient(360deg,
+ rgba(16, 16, 58) 11%,
+ rgb(16, 16, 58) 41%,
+ rgb(7, 7, 26) 61%,
+ rgb(0, 0, 0) 100%);
+}
+.sphere-1{
+ position: absolute;
+ top:60%;
+ left: 36%;
+ border-radius: 50%;
+ height: 120px;
+ width: 120px;
+ background: linear-gradient(180deg,
+ rgb(255, 27, 171) 11%,
+ rgb(94, 4, 61) 41%,
+ rgb(39, 3, 26) 61%,
+ rgb(22, 3, 15) 100%);
+}
+.sphere-2{
+ position: absolute;
+ top:80%;
+ right: 33%;
+ border-radius: 50%;
+ height: 80px;
+ width: 80px;
+ background: linear-gradient(180deg,
+ rgb(156, 33, 11) 11%,
+ rgb(31, 6, 2) 41%,
+ rgb(15, 3, 1) 61%,
+ rgb(15, 3, 1) 100%);
+}
+
+.sphere-3{
+ position: absolute;
+ top: 15%;
+ right: 30%;
+ border-radius: 50%;
+ height: 150px;
+ width: 150px;
+ background: linear-gradient(180deg,
+ rgb(50, 206, 206) 11%,
+ rgb(2, 39, 39) 41%,
+ rgb(0, 2, 2) 61%,
+ rgb(0, 2, 2) 100%);
+}
+.card{
+position: absolute;
+top: 27%;
+right: 38%;
+width: 250px;
+height: 400px;
+background: rgba(255, 255, 255, 0.2);
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2px);
+transform:
+    perspective(75em)
+    rotateX(35deg);
+
+}
+.profile{
+ position: relative;
+ width: 60px;
+ border-radius: 50%;
+ border: 1px solid #ffff;
+ margin-top: 45px;
+ right: -35%;
+}
+h1{
+ text-align: center;
+ color: #ffff;
+ font-family: 'Lato';
+ font-size: 18px;
+ margin-bottom: 0px;
+ margin-top: 15px;
+}
+h2{
+ text-align: center;
+ color: #ffff;
+ font-family: 'Lato';
+ font-size: 22px;
+ margin-top: 2px;
+ margin-bottom: 0px;
+}
+p{
+ text-align: center;
+ color: rgb(221, 221, 221);
+ font-family: 'Lato';
+ font-weight: 100;
+ margin-left: 6px;
+ margin-right: 6px;
+}
+.icons{
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 30px;
+}
+
+a img:hover{
+ background-color: rgb(218, 144, 157);
+ padding: 4px;
+ border-radius: 50%;
+}
+.btn{
+ color: #ffff;
+ text-align: center;
+ width: 180px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 30px;
+ padding-top: 18px;
+ padding-bottom: 18px;
+ border: 1px solid gray;
+ border-radius: 30px;
+}
+.btn a{
+ text-decoration: none;
+ color: #ffff;
+ font-family: 'Lato';
+}
+.btn:hover{
+ background: rgb(218, 144, 157);
+}
+
+@media (max-width: 450px){
+.card{
+ right: 9%;
+}
+.sphere-1{
+ left: 10%;
+}
+.sphere-2{
+ right: 5%;
+}
+.sphere-3{
+ right: 1%;
+}
+}
